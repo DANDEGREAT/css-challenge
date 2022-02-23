@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-icons:hsl(244, 38%, 16%);
+    --clr-icons: hsl(233, 47%, 7%);
+    --clr-icons:  hsl(277, 64%, 61%);
+}
+
+body{
+    margin: 1em;
+    background-color: hsl(233, 47%, 7%);
+    color:  hsl(277, 64%, 61%);
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction:column;
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 0
+
+}
+
+
+@media all and (min-width: 375px ) {
+
+    .desktop{
+        display: none;
+    }
+.mobile {
+    display:block ;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 30px solid;
+}
+}
+
+
+@media all and (max-width: 1440px ) {
+
+    .mobile{
+        display: none;
+    }
+.desktop {
+    display:block;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: right;
+    object-fit: fill;
+    border-radius: 9px solid;
+}
+
+}
+
+
+
+.title {
+color:  hsl(0, 0%, 100%);
+}
+.spec{
+    color: hsl(277, 64%, 61%);
+
+}
+ 
+.description{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family:'https://fonts.google.com/specimen/Inter';
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+.stats {
+  
+  font-family: 'lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  line-height:  8px;
+  text-transform: none;
+  color:hsl(0, 0%, 100%);
+  
+
+
+
+}
+
+.stathead1,
+.stathead2,
+ .stathead3{
+     display:flex;
+
+     flex: 1 2 3 100%;
+    
+ color:hsla(0, 0%, 100%, 0.6);
+ 
+ 
+
+}
